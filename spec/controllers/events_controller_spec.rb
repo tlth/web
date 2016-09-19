@@ -13,6 +13,13 @@ RSpec.describe EventsController do
       expect(response).to have_http_status(200)
     end
 
+    it 'renders with cover_photo' do
+      image = create(:image)
+      Settings.events_cover_image = image.id
+
+      get(:index)
+    end
+
     it 'renders .ics format' do
       create(:event)
       get(:index, format: :ics)

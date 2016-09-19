@@ -2,24 +2,25 @@
 $brand-primary: #004688;
 $dark-gray: #555;
 $gray: #888;
+$light-blue: #017ab3;
 $light-gray: #aaa;
 $lighter-gray: #d8d8d8;
-$light-blue: #017AB3;
+$white: #fff;
 
 // Typography
 $font-size-base: 16px;
-$font-size-h1: floor($font-size-base * 3.0);
+$font-size-h1: floor($font-size-base * 3);
 $font-family-sans-serif: "Roboto", sans-serif;
 $headings-color: $brand-primary;
 $headings-font-weight: 300;
 $text-color: $dark-gray;
 
 // MISC
-$navbar-default-bg: #ffffff;
-$navbar-default-link-active-bg: #F2F2F2;
+$navbar-default-bg: #fff;
+$navbar-default-link-active-bg: #f2f2f2;
 
 $grid-gutter-width: 52px;
 
-$border-radius-base: 0px;
-$border-radius-large: 0px;
-$border-radius-small: 0px;
+$border-radius-base: 0;
+$border-radius-large: 0;
+$border-radius-small: 0;

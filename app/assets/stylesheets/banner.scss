@@ -1,0 +1,48 @@
+.carousel,
+.item,
+.active {
+  height: 100%;
+}
+
+.carousel {
+  .carousel-inner {
+    height: 100%;
+
+    .item {
+      .fill {
+        min-height: 440px;
+        height: 100%;
+        width: 100%;
+        background-position: center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+      }
+    }
+
+    .carousel-caption {
+      a {
+        color: $white;
+      }
+    }
+  }
+
+  .logo {
+    bottom: 0;
+    height: 64%;
+    left: 0;
+    margin: auto;
+    margin-top: 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 80%;
+    z-index: 10;
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}

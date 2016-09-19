@@ -12,6 +12,7 @@ namespace :db do
     puts "=== email: administrator@tlth.se ==="
     puts "=== pass: testtest ==="
 
+    image = Image.create(image: File.open('spec/support/cover.jpg'))
 
     # Page
     page = Page.find_or_create_by!(title_sv: 'Heltidare',
@@ -19,6 +20,7 @@ namespace :db do
                                    content_sv: 'Detta är den svenska sidan',
                                    content_en: 'This is an english page',
                                    slug: 'sabbatical-officers')
+    page.update(image: image)
 
     # Contact form
     contact_form = ContactForm.find_or_initialize_by(page: page, user: admin, title: 'Kontakt')
@@ -82,4 +84,5 @@ namespace :db do
     # Tag
     Tag.find_or_create_by!(title: 'Näringsliv', color: '#eb7125')
     Tag.find_or_create_by!(title: 'Webbutveckling', color: '#ffffff')
-  end end
+  end
+end

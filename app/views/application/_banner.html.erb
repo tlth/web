@@ -1,0 +1,43 @@
+<% pages ||= nil %>
+<% link ||= pages.try(:first) %>
+<% url ||= nil %>
+<% content_for(:banner_indicators) do %>
+  <% if pages.present? && pages.count > 1%>
+    <% pages.each_with_index do |page, index| %>
+      <%= banner_carousel_indicator('banner', index) %>
+    <% end %>
+  <% end %>
+<% end %>
+
+<% content_for(:banner_image) do %>
+  <% if pages.present? %>
+    <% pages.each_with_index do |page, index| %>
+      <%= banner_page(page, index) %>
+    <% end %>
+  <% elsif url.present? %>
+    <%= banner_url(url) %>
+  <% end %>
+<% end %>
+
+<div id="banner" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <%= yield(:banner_indicators) %>
+  </ol>
+
+  <div class="logo">
+    <%= link_to(link) do %>
+      <%= image_tag("white_stand_#{I18n.locale}.svg") %>
+    <% end %>
+  </div>
+
+  <div class="carousel-inner">
+    <%= yield(:banner_image) %>
+  </div>
+
+  <a class="left carousel-control" href="#banner" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#banner" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>

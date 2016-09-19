@@ -19,7 +19,7 @@ gem 'uglifier', '>= 1.3.0'
 # Assets
 gem 'acts_as_list'
 gem 'auto_html'
-gem 'bootstrap-sass', '~> 3.2.0'
+gem 'bootstrap-sass'
 gem 'bootstrap3-datetimepicker-rails', '~> 3.0.0.2'
 gem 'bootstrap_form'
 gem 'codemirror-rails' # Used by summernote for displaying html
@@ -39,7 +39,7 @@ gem 'rails-settings-cached', '0.4.1'
 gem 'rails_bootstrap_navbar'
 gem 'remotipart', '~> 1.2'
 gem 'rollbar'
-gem 'sass-rails', '~> 4.0.3'
+gem 'sass-rails'
 gem 'select2-rails'
 gem 'skylight' # Monitor memory usage
 gem 'traco' #Localization

@@ -11,8 +11,7 @@
   <body>
     <%= render 'application/navbar' %>
 
-    <%# Template Dependency: application/banner_carousel  %>
-    <%= banner_image %>
+    <%= yield(:banner) %>
 
     <div class="container" id="content">
       <%= render 'application/flash' %>

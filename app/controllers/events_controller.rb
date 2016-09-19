@@ -6,6 +6,7 @@ class EventsController < ApplicationController
 
   def index
     @events = @events.by_start.filter(filtering_params)
+    @cover_image = Image.find_by(id: Settings[:events_cover_image])
 
     respond_to do |format|
       format.html do
