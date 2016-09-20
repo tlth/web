@@ -93,6 +93,8 @@ en:
     archive:
       no_posts: Could not find any posts :(
       no_posts_lead: Try another filter
+    edit:
+      remove_post: Remove
     form:
       post_image: Image
       select_image: Choose image

@@ -11,7 +11,7 @@
       </div>
     </div>
     <% cache(cache_key_homepage_posts) do %>
-      <%= render partial: 'posts/post', collection: @posts %>
+      <%= render @posts %>
     <% end %>
     <div class="post-links">
       <%= link_to t('.archive'), archive_posts_path %>
