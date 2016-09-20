@@ -95,6 +95,8 @@ sv:
     archive:
       no_posts: Kunde inte hitta några nyheter
       no_posts_lead: Testa med en annan filtrering.
+    edit:
+      remove_post: Ta Bort
     form:
       post_image: Bild
       select_image: Välj bild

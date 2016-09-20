@@ -1,2 +1,3 @@
 <%= form_heading :update, Post %>
 <%= render 'form', post: @post %>
+<%= link_to t('.remove_post'), post_path, method: :delete  %>
