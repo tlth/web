@@ -1,8 +1,7 @@
 // Use the SCSS import mechanism instead of Rails sprockets, as is done below.
 
 @import "variables";
-@import "pages";
-@import "events";
+@import "pages"; @import "events";
 @import "images";
 
 @import "bootstrap-sprockets";
@@ -35,28 +34,32 @@ body {
 }
 
 /*  -- PAGE CONTENT --  */
-#content {
-  margin-top: 50px;
+.content {
   margin-bottom: 50px;
+  margin-top: 50px;
+
+  @media (max-width: 990px) {
+    margin-top: 10px;
+  }
 
   .lead {
     font-size: 18px;
+
+    & a {
+      color: $light-gray;
+      font-style: italic;
+    }
   }
 
   .wmd-input {
     height: 300px !important;
-  }
-
-  .lead a {
-    color: $light-gray;
-    font-style: italic;
   }
 }
 
 /*  -- MISC --  */
 
 .page-header {
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 .large-select {
@@ -66,7 +69,10 @@ body {
   }
 }
 
-.select2-choice, .select2-choices, .select2-drop, .select2-search > input {
+.select2-choice,
+.select2-choices,
+.select2-drop,
+.select2-search > input {
   border-radius: 0 !important;
 }
 
@@ -78,18 +84,20 @@ body {
 
 .center-pills {
   text-align: center;
+
   .nav-pills {
     display: inline-block;
   }
 }
 
 .modal-title {
-  text-overflow: ellipsis;
   overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 #insertImageModal .modal-header {
   text-align: center;
+
   #image-modal-tabs {
     display: inline-block;
   }

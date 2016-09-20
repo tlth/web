@@ -8,7 +8,7 @@ class PostsController < ApplicationController
     @posts.includes(:image)
       .order(created_at: :desc)
       .filter(filtering_params)
-    @pages = Page.includes(:image).where(id: Settings[:promoted_pages])
+    @images = Image.where(id: Settings.cover_image_ids)
 
     respond_to do |format|
       format.html { @posts = @posts.order(updated_at: :desc).limit(10) }

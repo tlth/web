@@ -1,7 +1,6 @@
 <% content_for :banner do %>
   <%= render('/application/banner',
-             pages: @pages,
-             url: image_url('cover.jpg')) %>
+             images: @images) %>
 <% end %>
 
 <% cache(cache_key_posts_index) do %>
