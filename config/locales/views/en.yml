@@ -108,6 +108,7 @@ en:
       edit_post: Edit post
       published: "Published: "
       updated_at: "Updated: "
+      remove_post: Remove post
     post:
       published: "Published: "
       updated_at: "Updated: "
