@@ -1,7 +1,7 @@
-.note-editor {
+.note-editor.note-frame {
   border: none;
   .note-editable {
-    outline: 1px solid #cccccc;
+    border: 1px solid #cccccc;
     transition: border-color ease-in-out 0.15s;
 
     &:focus {

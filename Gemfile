@@ -26,7 +26,6 @@ gem 'codemirror-rails' # Used by summernote for displaying html
 gem 'dragonfly', "~>1.0.12" #Image Uploading
 gem 'dragonfly-s3_data_store' # Store images on s3
 gem 'dynamic_sitemaps'
-gem 'font-awesome-rails' # Used by summernote
 gem 'fuzzily' #Fuzzy string search
 gem 'http_accept_language' #Auto set locale
 gem 'icalendar' # Export i ics calendar files
@@ -47,6 +46,7 @@ gem 'twitter'
 gem 'whenever', :require => false #Automatically generate sitemaps
 gem 'zeroclipboard-rails'
 gem 'meta-tags'
+gem 'summernote-rails'
 
 group :development do
   gem 'awesome_print' # Better printing in console
