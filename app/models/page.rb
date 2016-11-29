@@ -1,9 +1,10 @@
 class Page < ActiveRecord::Base
   include LocaleContent
 
-  validates :title_sv, presence: true, character: true
-  validates :title_en, presence: true, character: true
-  validates :slug, presence: true, uniqueness: { case_sensitive: false }
+  validates(:title_sv, :title_en, presence: true, character: true)
+  validates(:slug, presence: true,
+                   uniqueness: { case_sensitive: false },
+                   format: { with: /\A[a-z0-9-]+\z/ })
   validates :content, presence: true
   validate :slug_not_reserved_path
 
@@ -27,7 +28,6 @@ class Page < ActiveRecord::Base
       self.slug = self.title_en.parameterize
     end
   end
-
 
   def slug_not_reserved_path
     if reserved_paths.include? slug

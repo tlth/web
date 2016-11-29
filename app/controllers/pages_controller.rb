@@ -11,6 +11,7 @@ class PagesController < ApplicationController
   def show
     @page = Page.find_by_slug(params[:id])
     @contact_forms = @page.contact_forms.includes(:pages, :users)
+
     if @page.try(:nav_item).try(:parent)
       @sidebar_nav_items = @page.nav_item.parent.children.includes(:page)
     end

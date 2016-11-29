@@ -33,7 +33,10 @@
           <%= t(:tools) %>
           <span class="pull-right sidebar-glyph glyphicon glyphicon-wrench"></span>
         </h3>
-        <ul><li><%= link_to t('.edit_post'), edit_post_path(@post) %></li></ul>
+        <ul>
+          <li><%= link_to t('.edit_post'), edit_post_path(@post) %></li>
+          <li><%= link_to t('.remove_post'), post_path(@post), method: :delete %> </li>
+        </ul>
       </div>
     <% end %>
   <% end %>

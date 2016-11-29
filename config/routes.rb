@@ -50,6 +50,7 @@ Rails.application.routes.draw do
   get    ':id',   to: 'pages#show', as: :page
   patch  ':id',   to: 'pages#update'
   delete ':id',   to: 'pages#destroy'
+
   resources :pages, shallow: true, except: [:show, :delete, :index] do
     member do
       get    'add_user'
@@ -58,6 +59,7 @@ Rails.application.routes.draw do
       get    'change_cover'
       delete 'delete_cover'
     end
+
     resources :contact_forms do
       post 'send_mail', on: :member
     end
