@@ -11,10 +11,9 @@
   <body>
     <%= render 'application/navbar' %>
 
-    <%# Template Dependency: application/banner_carousel  %>
-    <%= banner_image %>
+    <%= yield(:banner) %>
 
-    <div class="container" id="content">
+    <div class="container content" id="content">
       <%= render 'application/flash' %>
 
       <% if content_for?(:sidebar) %>

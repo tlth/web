@@ -1,0 +1,9 @@
+sv:
+  settings:
+    edit:
+      add_link: Lägg till länk
+      cover_images: Omslagsbilder
+      lead: Sidingress
+      remove_link: Ta bort länk
+      select_cover_images: Välj omslagsbilder
+      sidebar_links: Länkar i sidebar

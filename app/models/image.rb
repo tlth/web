@@ -41,4 +41,8 @@ class Image < ActiveRecord::Base
   def thumb_url
     image.thumb('160x160#').url
   end
+
+  def cover_image
+    image.thumb('1200x315#').url
+  end
 end

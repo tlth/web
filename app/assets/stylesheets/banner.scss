@@ -1,0 +1,83 @@
+.carousel,
+.item,
+.active {
+  height: 100%;
+}
+
+.carousel {
+  .carousel-inner {
+    height: 100%;
+
+    .item {
+      .fill {
+        min-height: 400px;
+        height: 100%;
+        width: 100%;
+        background-position: center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+      }
+    }
+  }
+
+  .logo {
+    bottom: 0;
+    height: 80%;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 80%;
+    z-index: 10;
+
+    @media (min-width: 990px) {
+      height: 60%;
+    }
+
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  // Landscape tablets and medium desktops
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .carousel-inner {
+      .item {
+        .fill {
+          min-height: 300px;
+        }
+      }
+    }
+  }
+
+  // Portrait tablets and small desktops
+  @media (min-width: 768px) and (max-width: 991px) {
+    .carousel-inner {
+      .item {
+        .fill {
+          min-height: 200px;
+        }
+      }
+    }
+  }
+
+  // Landscape phones and portrait tablets
+  @media (max-width: 767px) {
+    .carousel-inner {
+      .item {
+        .fill {
+          min-height: 100px;
+        }
+      }
+    }
+  }
+
+  // Portrait phones and smaller
+  @media (max-width: 503px) {
+  }
+}

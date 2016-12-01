@@ -1,0 +1,27 @@
+sv:
+  images:
+    create:
+      success: Bilden laddades upp.
+
+    image_feed:
+      no_images: Kunde inte hitta några bilder.
+      no_images_lead: Testa med en annan filtrering.
+
+    image_select_modal:
+      images: Bilder
+      select: Välj bild
+      caption: Bildtext
+      link_to: Bildlänk
+      image_gallery: Galleri
+      image_uploader: Ladda upp ny bild
+
+    cover_image_modal:
+      image_gallery: Galleri
+      image_uploader: Uppladdning
+
+    index:
+      images: Bilder
+      new_image: Ladda upp ny bild
+
+    new:
+      upload_image: Ladda upp ny bild

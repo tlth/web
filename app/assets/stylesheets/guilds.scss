@@ -1,0 +1,28 @@
+@font-face {
+  font-family: guilds;
+  src: url(asset_path('LTH-SEKTIONSSYMBOLER_2011.TTF'));
+}
+
+.guilds {
+  border-top: 2px solid #eee;
+  font-family: guilds;
+  font-size: 48px;
+  padding-top: 30px;
+  text-align: center;
+
+  a {
+    color: #555555;
+    margin-left: 10px;
+
+    &:hover {
+      text-decoration: inherit;
+    }
+  }
+
+  #dokt {
+    height: 32px;
+
+    /* Fix Safari disagreeing about the middle */
+    vertical-align: baseline;
+  }
+}

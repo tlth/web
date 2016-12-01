@@ -42,24 +42,6 @@ sv:
       question_form_sent: Ett mail har skickats till kontaktpersonen.
     question_fields:
       remove_question: Ta bort fråga
-  images:
-    create:
-      success: Bilden laddades upp.
-    image_feed:
-      no_images: Kunde inte hitta några bilder.
-      no_images_lead: Testa med en annan filtrering.
-    image_select_modal:
-      images: Bilder
-      select: Välj bild
-      caption: Bildtext
-      link_to: Bildlänk
-      image_gallery: Galleri
-      image_uploader: Ladda upp ny bild
-    index:
-      images: Bilder
-      new_image: Ladda upp ny bild
-    new:
-      upload_image: Ladda upp ny bild
   nav_items:
     new:
       create_menu: Skapa meny
@@ -116,13 +98,6 @@ sv:
     posts_feed:
       no_posts: "Kunde inte hitta några nyheter :("
       no_posts_lead: Testa med en annan filtrering
-  settings:
-    edit:
-      add_link: Lägg till länk
-      remove_link: Ta bort länk
-      lead: Sidingress
-      sidebar_links: Länkar i sidebar
-      promoted_page: Bannersidor
   uploads:
     index:
       uploads: Dokument

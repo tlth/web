@@ -19,7 +19,7 @@ gem 'uglifier', '>= 1.3.0'
 # Assets
 gem 'acts_as_list'
 gem 'auto_html'
-gem 'bootstrap-sass', '~> 3.2.0'
+gem 'bootstrap-sass'
 gem 'bootstrap3-datetimepicker-rails', '~> 3.0.0.2'
 gem 'bootstrap_form'
 gem 'codemirror-rails' # Used by summernote for displaying html
@@ -38,7 +38,7 @@ gem 'rails-settings-cached', '0.4.1'
 gem 'rails_bootstrap_navbar'
 gem 'remotipart', '~> 1.2'
 gem 'rollbar'
-gem 'sass-rails', '~> 4.0.3'
+gem 'sass-rails'
 gem 'select2-rails'
 gem 'skylight' # Monitor memory usage
 gem 'traco' #Localization
@@ -54,7 +54,6 @@ group :development do
   gem 'binding_of_caller' #Used by better errors to provide REPL
   gem 'bullet' # Display N+1 problems
   gem 'web-console'
-  gem 'quiet_assets'
 end
 
 group :development, :test do
@@ -66,6 +65,7 @@ group :development, :test do
   gem 'pry-byebug'
   gem 'pry-rails'
   gem 'rspec-rails'
+  gem 'quiet_assets'
 end
 
 group :test do
@@ -74,7 +74,6 @@ group :test do
   gem 'faker'
   gem 'meta_request' # Used by chrome plugin railspanel to show request info
   gem 'spring'
-  gem 'quiet_assets'
 end
 
 group :production do

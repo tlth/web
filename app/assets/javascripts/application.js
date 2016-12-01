@@ -8,7 +8,7 @@
 //= require bootstrap-datetimepicker
 //= require locales/bootstrap-datetimepicker.sv.js
 //= require ekko-lightbox
-//= require select2
+//= require select2-full
 //= require select2_locale_sv
 //= require jquery_nested_form
 //= require jquery.minicolors

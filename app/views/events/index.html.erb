@@ -1,3 +1,8 @@
+<% content_for(:banner) do %>
+  <%= render('/application/banner',
+             url: @cover_image.try(:cover_image)) %>
+<% end %>
+
 <div class="page-header">
   <h1><%= t('.event') %></h1>
 </div>

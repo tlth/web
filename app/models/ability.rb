@@ -19,6 +19,8 @@ class Ability
       can :manage, Image
     end
 
+    can :show, Upload
+
     if User.exists?(user.id)
       can :read, Upload
       can [:update, :destroy], user

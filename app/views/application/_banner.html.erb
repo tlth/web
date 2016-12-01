@@ -1,0 +1,20 @@
+<% cache_unless(current_user.present?, [I18n.locale, :banner]) do %>
+  <% url ||= nil %>
+  <% images ||= [] %>
+
+  <div id="banner" class="carousel slide" data-ride="carousel" data-interval="5000">
+    <div class="logo">
+      <%= image_tag("white_stand_#{I18n.locale}.svg") %>
+    </div>
+
+    <div class="carousel-inner">
+      <% if images.any? %>
+        <% images.each_with_index do |img, index| %>
+          <%= banner_url(img.cover_image, index: index) %>
+        <% end %>
+      <% elsif url.present? %>
+        <%= banner_url(url) %>
+      <% end %>
+    </div>
+  </div>
+<% end %>

@@ -8,6 +8,7 @@ class PostsController < ApplicationController
     @posts.includes(:image)
       .order(created_at: :desc)
       .filter(filtering_params)
+    @images = Image.where(id: Settings.cover_image_ids)
 
     respond_to do |format|
       format.html { @posts = @posts.order(updated_at: :desc).limit(10) }
@@ -57,7 +58,7 @@ class PostsController < ApplicationController
   end
 
   def destroy
-    @post.destroy
+    @post.destroy!
     redirect_to posts_path
   end
 

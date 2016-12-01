@@ -39,6 +39,12 @@ class Page < ActiveRecord::Base
     slug
   end
 
+  def cover_image
+    if image.present?
+      image.cover_image
+    end
+  end
+
   private
 
   def reserved_paths
