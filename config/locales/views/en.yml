@@ -93,6 +93,8 @@ en:
     archive:
       no_posts: Could not find any posts :(
       no_posts_lead: Try another filter
+    edit:
+      remove_post: Remove
     form:
       post_image: Image
       select_image: Choose image
@@ -106,6 +108,7 @@ en:
       edit_post: Edit post
       published: "Published: "
       updated_at: "Updated: "
+      remove_post: Remove post
     post:
       published: "Published: "
       updated_at: "Updated: "

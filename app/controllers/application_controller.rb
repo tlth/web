@@ -60,7 +60,7 @@ class ApplicationController < ActionController::Base
     if cookies['locale'] && I18n.available_locales.include?(cookies['locale'].to_sym)
       I18n.locale = cookies['locale'].to_sym
     else
-      I18n.locale = http_accept_language.compatible_language_from(I18n.available_locales)
+      I18n.locale = I18n.default_locale
     end
   end
 
