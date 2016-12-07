@@ -41,7 +41,6 @@ gem 'remotipart', '~> 1.2'
 gem 'rollbar'
 gem 'sass-rails', '~> 4.0.3'
 gem 'select2-rails'
-gem 'skylight' # Monitor memory usage
 gem 'traco' #Localization
 gem 'twitter'
 gem 'whenever', :require => false #Automatically generate sitemaps
