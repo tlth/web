@@ -28,6 +28,7 @@ gem 'dragonfly', '~>1.0.12' # Image Uploading
 gem 'dragonfly-s3_data_store' # Store images on s3
 gem 'dynamic_sitemaps'
 gem 'font-awesome-rails' # Used by summernote
+gem 'font-awesome-sass'
 gem 'fuzzily' # Fuzzy string search
 gem 'http_accept_language' # Auto set locale
 gem 'icalendar' # Export i ics calendar files
@@ -35,6 +36,7 @@ gem 'jquery-minicolors-rails'
 gem 'kaminari' # Pagination
 gem 'kaminari-bootstrap', '~> 3.0.1'
 gem 'meta-tags'
+gem 'mini_magick'
 gem 'momentjs-rails', '>= 2.5.0' # Required for datetimepicker
 gem 'nested_form'
 gem 'rails-settings-cached', '0.4.1'
@@ -47,7 +49,6 @@ gem 'traco' # Localization
 gem 'twitter'
 gem 'whenever', require: false # Automatically generate sitemaps
 gem 'zeroclipboard-rails'
-gem 'font-awesome-sass'
 
 group :development do
   gem 'awesome_print' # Better printing in console

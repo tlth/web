@@ -4,6 +4,8 @@ class Post < ActiveRecord::Base
   include FuzzySearchTitles
   include LocaleContent
 
+  belongs_to :image
+
   validates :title_sv, presence: true
   validates :title_en, presence: true
   validates :content, presence: true
@@ -16,7 +18,7 @@ class Post < ActiveRecord::Base
 
   has_many :taggings, as: :taggable
   has_many :tags, through: :taggings
-  belongs_to :image
+
 
   translates :title, :content
   fuzzily_searchable :title_en, :title_sv
