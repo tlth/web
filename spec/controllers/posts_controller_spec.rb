@@ -5,9 +5,9 @@ RSpec.describe PostsController, type: :controller do
 
   describe "GET show" do
     it "render show " do
-        post = create(:post)
-        get :show, id: post.to_param
-        expect(response).to render_template :show
+      post = create(:post)
+      get :show, id: post.to_param
+      expect(response).to render_template :show
     end
   end
 end
