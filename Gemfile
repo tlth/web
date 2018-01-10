@@ -6,7 +6,7 @@ gem 'rails', '5.0.3'
 
 # Core
 gem 'autoprefixer-rails'
-gem 'cancancan', '~> 1.8'
+gem 'cancancan', '~> 2.1'
 gem 'coffee-rails'
 gem 'devise'
 gem 'jquery-rails'
