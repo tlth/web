@@ -372,7 +372,6 @@ PLATFORMS
 
 DEPENDENCIES
   acts_as_list
-  autoprefixer-rails
   awesome_print
   better_errors
   binding_of_caller

@@ -5,7 +5,6 @@ ruby '2.5.0'
 gem 'rails', '< 5.1'
 
 # Core
-gem 'autoprefixer-rails'
 gem 'cancancan', '~> 2.1'
 gem 'coffee-rails'
 gem 'devise'
