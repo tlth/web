@@ -252,8 +252,8 @@ GEM
       nokogiri (>= 1.6)
     rails-html-sanitizer (1.0.3)
       loofah (~> 2.0)
-    rails-settings-cached (0.4.1)
-      rails (>= 4.0.0)
+    rails-settings-cached (0.6.6)
+      rails (>= 4.2.0)
     rails_12factor (0.0.3)
       rails_serve_static_assets
       rails_stdout_logging
@@ -278,7 +278,7 @@ GEM
       railties (>= 4.2.0, < 5.3)
     rollbar (2.15.5)
       multi_json
-    rspec-core (3.7.0)
+    rspec-core (3.7.1)
       rspec-support (~> 3.7.0)
     rspec-expectations (3.7.0)
       diff-lcs (>= 1.2.0, < 2.0)
@@ -294,7 +294,7 @@ GEM
       rspec-expectations (~> 3.7.0)
       rspec-mocks (~> 3.7.0)
       rspec-support (~> 3.7.0)
-    rspec-support (3.7.0)
+    rspec-support (3.7.1)
     sass (3.5.3)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
@@ -411,7 +411,7 @@ DEPENDENCIES
   puma
   rails (< 5.1)
   rails-controller-testing
-  rails-settings-cached (= 0.4.1)
+  rails-settings-cached
   rails_12factor
   rails_bootstrap_navbar
   rails_stdout_logging

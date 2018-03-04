@@ -1,0 +1,12 @@
+# config/app.yml
+defaults: &defaults
+  cover_image_ids: []
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults

@@ -32,7 +32,7 @@ gem 'meta-tags'
 gem 'mini_magick'
 gem 'momentjs-rails', '>= 2.5.0' # Required for datetimepicker
 gem 'nested_form'
-gem 'rails-settings-cached', '0.4.1'
+gem 'rails-settings-cached'
 gem 'rails_bootstrap_navbar'
 gem 'remotipart', '~> 1.2'
 gem 'rollbar'
