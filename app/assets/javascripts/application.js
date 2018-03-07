@@ -15,7 +15,7 @@
 //= require codemirror/modes/http
 //= require codemirror/modes/htmlmixed
 //= require summernote
-//= require summernote/locales/sv-SE
+//= require summernote/lang/summernote-sv-SE
 //= require jquery.nestable
 //= require zeroclipboard
 //= require_tree .
