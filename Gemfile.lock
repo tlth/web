@@ -59,7 +59,7 @@ GEM
       aws-sigv4 (~> 1.0)
     aws-sigv4 (1.0.2)
     bcrypt (3.1.11)
-    bootsnap (1.2.0)
+    bootsnap (1.2.1)
       msgpack (~> 1.0)
     bootstrap-navbar (3.0.0)
       gem_config (~> 0.3)
