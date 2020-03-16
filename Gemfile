@@ -5,7 +5,7 @@ ruby '2.5.0'
 gem 'rails', '< 5.2'
 
 # Core
-gem 'cancancan', '~> 2.1'
+gem 'cancancan', '~> 3.1'
 gem 'coffee-rails'
 gem 'devise'
 gem 'jquery-rails'
