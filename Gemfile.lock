@@ -102,7 +102,7 @@ GEM
     coffee-script-source (1.12.2)
     concurrent-ruby (1.0.5)
     crass (1.0.4)
-    database_cleaner (1.6.2)
+    database_cleaner (1.8.5)
     devise (4.4.1)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
