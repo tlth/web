@@ -1,4 +1,8 @@
+## :warning: Decomissioned & archived 2021-01-29 in favour of squarespace hosted website :warning:
+
+
 # Teknologkåren LTH
+
 
 This is the repository containing the code for the Rails application acting as a CMS system for Teknologkåren at LTH
 
